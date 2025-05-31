@@ -9,8 +9,64 @@
     <link rel='shortcut icon'
         href='https://www.carevelveiculos.com.br/assets/uploads/nt_conteudo_geral/42089-s-removebg-preview.png?v=0.1' />
 
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Assine seu Volkswagen e tenha sempre um carro novo com comodidade e flexibilidade. Confira nossos valores e saiba mais!
+" />
+    <meta name="author" content="Lead Force LTDA">
+    <meta name="referrer" content="origin">
+
+    <!-- Copyright semantico -->
+    <meta name="copyright" content="&copy; 2025 Carevel Volkswagen" />
+
+    <!-- Verificação Google -->
+    <meta name="google-site-verification" content="muJw8YfzGgijER0-SHOQej1Xp1PK_FdYw1zV61RQtMY" />
+
+    <!-- fb prop-->
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:url" content="https://www.carevelveiculos.com.br/assinatura">
+    <meta property="og:title" content="Veículos por assinatura | Concessionária Carevel Volkswagen">
+
+    <meta property="og:description" content="Assine seu Volkswagen e tenha sempre um carro novo com comodidade e flexibilidade. Confira nossos valores e saiba mais!
+" />
+
+
+    <meta property="og:type" content="website" />
+
     <link rel="canonical" href="https://www.carevelveiculos.com.br/assinatura" />
 
+    <meta name="referrer" content="origin">
+
+    <script type="text/javascript">
+        var ROOT = "https://www.carevelveiculos.com.br/";
+        var LANG = "PT";
+        var CLIENT_IP = "177.129.89.170";
+        var SEGMENT_1 = "assinatura";
+        var SEGMENT_2 = "";
+
+        //verificação do navegador
+        navigator.sayswho = (function () {
+            var ua = navigator.userAgent,
+                tem,
+                M = ua.match(/(opera|chrome|safari|firefox|msie|trident(?=\/))\/?\s*(\d+)/i) || [];
+            if (/trident/i.test(M[1])) {
+                tem = /\brv[ :]+(\d+)/g.exec(ua) || [];
+                return 'IE ' + (tem[1] || '');
+            }
+            if (M[1] === 'Chrome') {
+                tem = ua.match(/\b(OPR|Edge)\/(\d+)/);
+                if (tem != null) return tem.slice(1).join(' ').replace('OPR', 'Opera');
+            }
+            M = M[2] ? [M[1], M[2]] : [navigator.appName, navigator.appVersion, '-?'];
+            if ((tem = ua.match(/version\/(\d+)/i)) != null) M.splice(1, 1, tem[1]);
+            return M.join(' ');
+        })();
+
+        if (navigator.sayswho == "MSIE 9" || navigator.sayswho == "MSIE 8" || navigator.sayswho == "MSIE 7" || navigator.sayswho == "MSIE 5") {
+            window.location = ROOT + "update_browser";
+        }
+    </script>
     <link href="https://fonts.googleapis.com/css?family=Muli:300,400,600,700&display=swap" rel="stylesheet">
 
     <style type="text/css" media="screen">
@@ -41,14 +97,27 @@
             --breakpoint-md: 768px;
             --breakpoint-lg: 992px;
             --breakpoint-xl: 1200px;
-            --font-family-sans-serif: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-            --font-family-monospace: "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace
+            --font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
+        }
+
+        *,
+        ::after,
+        ::before {
+            box-sizing: border-box
         }
 
         html {
             font-family: sans-serif;
             line-height: 1.15;
+            -webkit-text-size-adjust: 100%;
+            -ms-text-size-adjust: 100%;
             -ms-overflow-style: scrollbar;
+            -webkit-tap-highlight-color: transparent
+        }
+
+        @-ms-viewport {
+            width: device-width
         }
 
         article,
@@ -67,7 +136,7 @@
 
         body {
             margin: 0;
-            font-family: "BlinkMacSystemFont", "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
             font-size: 1rem;
             font-weight: 400;
             line-height: 1.5;
@@ -76,10 +145,14 @@
             background-color: #fff
         }
 
+        [tabindex="-1"]:focus {
+            outline: 0 !important
+        }
+
         hr {
             box-sizing: content-box;
             height: 0;
-            overflow: visible;
+            overflow: visible
         }
 
         h1,
@@ -97,59 +170,59 @@
             margin-bottom: 1rem
         }
 
-        /* abbr[data-original-title],
+        abbr[data-original-title],
         abbr[title] {
             text-decoration: underline;
             -webkit-text-decoration: underline dotted;
             text-decoration: underline dotted;
             cursor: help;
-            border-bottom: 0;
-        } */
+            border-bottom: 0
+        }
 
         address {
             margin-bottom: 1rem;
             font-style: normal;
-            line-height: inherit;
+            line-height: inherit
         }
 
         dl,
         ol,
         ul {
             margin-top: 0;
-            margin-bottom: 1rem;
+            margin-bottom: 1rem
         }
 
         ol ol,
         ol ul,
         ul ol,
         ul ul {
-            margin-bottom: 0;
+            margin-bottom: 0
         }
 
         dt {
-            font-weight: 700;
+            font-weight: 700
         }
 
         dd {
             margin-bottom: .5rem;
-            margin-left: 0;
+            margin-left: 0
         }
 
         blockquote {
-            margin: 0 0 1rem;
+            margin: 0 0 1rem
         }
 
         dfn {
-            font-style: italic;
+            font-style: italic
         }
 
         b,
         strong {
-            font-weight: bolder;
+            font-weight: bolder
         }
 
         small {
-            font-size: 80%;
+            font-size: 80%
         }
 
         sub,
@@ -157,73 +230,74 @@
             position: relative;
             font-size: 75%;
             line-height: 0;
-            vertical-align: baseline;
+            vertical-align: baseline
         }
 
         sub {
-            bottom: -.25em;
+            bottom: -.25em
         }
 
         sup {
-            top: -.5em;
+            top: -.5em
         }
 
         a {
             color: #007bff;
             text-decoration: none;
             background-color: transparent;
+            -webkit-text-decoration-skip: objects
         }
 
         a:hover {
             color: #0056b3;
-            text-decoration: underline;
+            text-decoration: underline
         }
 
         a:not([href]):not([tabindex]) {
             color: inherit;
-            text-decoration: none;
+            text-decoration: none
         }
 
         a:not([href]):not([tabindex]):focus,
         a:not([href]):not([tabindex]):hover {
             color: inherit;
-            text-decoration: none;
+            text-decoration: none
         }
 
         a:not([href]):not([tabindex]):focus {
-            outline: 0;
+            outline: 0
         }
 
         code,
         kbd,
         pre,
         samp {
-            font-family: "monospace", "monospace";
-            font-size: 1em;
+            font-family: monospace, monospace;
+            font-size: 1em
         }
 
         pre {
             margin-top: 0;
             margin-bottom: 1rem;
             overflow: auto;
-            -ms-overflow-style: scrollbar;
+            -ms-overflow-style: scrollbar
         }
 
         figure {
-            margin: 0 0 1rem;
+            margin: 0 0 1rem
         }
 
         img {
             vertical-align: middle;
-            border-style: none;
+            border-style: none
         }
 
         svg:not(:root) {
-            overflow: hidden;
+            overflow: hidden
         }
 
         table {
-            border-collapse: collapse;
+            border-collapse: collapse
         }
 
         caption {
@@ -231,25 +305,25 @@
             padding-bottom: .75rem;
             color: #6c757d;
             text-align: left;
-            caption-side: bottom;
+            caption-side: bottom
         }
 
         th {
-            text-align: inherit;
+            text-align: inherit
         }
 
         label {
             display: inline-block;
-            margin-bottom: .5rem;
+            margin-bottom: .5rem
         }
 
         button {
-            border-radius: 0;
+            border-radius: 0
         }
 
         button:focus {
             outline: 1px dotted;
-            outline: 5px auto;
+            outline: 5px auto -webkit-focus-ring-color
         }
 
         button,
@@ -260,17 +334,24 @@
             margin: 0;
             font-family: inherit;
             font-size: inherit;
-            line-height: inherit;
+            line-height: inherit
         }
 
         button,
         input {
-            overflow: visible;
+            overflow: visible
         }
 
         button,
         select {
-            text-transform: none;
+            text-transform: none
+        }
+
+        [type=reset],
+        [type=submit],
+        button,
+        html [type=button] {
+            -webkit-appearance: button
         }
 
         [type=button]::-moz-focus-inner,
@@ -284,19 +365,26 @@
         input[type=checkbox],
         input[type=radio] {
             box-sizing: border-box;
-            padding: 0;
+            padding: 0
+        }
+
+        input[type=date],
+        input[type=datetime-local],
+        input[type=month],
+        input[type=time] {
+            -webkit-appearance: listbox
         }
 
         textarea {
             overflow: auto;
-            resize: vertical;
+            resize: vertical
         }
 
         fieldset {
             min-width: 0;
             padding: 0;
             margin: 0;
-            border: 0;
+            border: 0
         }
 
         legend {
@@ -308,15 +396,31 @@
             font-size: 1.5rem;
             line-height: inherit;
             color: inherit;
-            white-space: normal;
+            white-space: normal
         }
 
         progress {
-            vertical-align: baseline;
+            vertical-align: baseline
+        }
+
+        [type=number]::-webkit-inner-spin-button,
+        [type=number]::-webkit-outer-spin-button {
+            height: auto
         }
 
         [type=search] {
             outline-offset: -2px;
+            -webkit-appearance: none
+        }
+
+        [type=search]::-webkit-search-cancel-button,
+        [type=search]::-webkit-search-decoration {
+            -webkit-appearance: none
+        }
+
+        ::-webkit-file-upload-button {
+            font: inherit;
+            -webkit-appearance: button
         }
 
         output {
@@ -503,7 +607,7 @@
         kbd,
         pre,
         samp {
-            font-family: "SFMono-Regular", "Menlo", "Monaco", "Consolas", "Liberation Mono", "Courier New", monospace
+            font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace
         }
 
         code {
@@ -877,43 +981,43 @@
         }
 
         .offset-1 {
-            margin-left: 8.333333%;
+            margin-left: 8.333333%
         }
 
         .offset-2 {
-            margin-left: 16.666667%;
+            margin-left: 16.666667%
         }
 
         .offset-3 {
-            margin-left: 25%;
+            margin-left: 25%
         }
 
         .offset-4 {
-            margin-left: 33.333333%;
+            margin-left: 33.333333%
         }
 
         .offset-5 {
-            margin-left: 41.666667%;
+            margin-left: 41.666667%
         }
 
         .offset-6 {
-            margin-left: 50%;
+            margin-left: 50%
         }
 
         .offset-7 {
-            margin-left: 58.333333%;
+            margin-left: 58.333333%
         }
 
         .offset-8 {
-            margin-left: 66.666667%;
+            margin-left: 66.666667%
         }
 
         .offset-9 {
-            margin-left: 75%;
+            margin-left: 75%
         }
 
         .offset-10 {
-            margin-left: 83.333333%;
+            margin-left: 83.333333%
         }
 
         .offset-11 {
@@ -5818,6 +5922,7 @@
             padding: 0;
             background-color: transparent;
             border: 0;
+            -webkit-appearance: none
         }
 
         .modal-open {
@@ -12567,6 +12672,12 @@
             text-transform: none
         }
 
+        [type=reset],
+        [type=submit],
+        button,
+        html [type=button] {
+            -webkit-appearance: button
+        }
 
         [type=button]::-moz-focus-inner,
         [type=reset]::-moz-focus-inner,
@@ -12582,6 +12693,12 @@
             padding: 0
         }
 
+        input[type=date],
+        input[type=datetime-local],
+        input[type=month],
+        input[type=time] {
+            -webkit-appearance: listbox
+        }
 
         textarea {
             overflow: auto;
@@ -12618,6 +12735,7 @@
 
         [type=search] {
             outline-offset: -2px;
+            -webkit-appearance: none
         }
 
         [type=search]::-webkit-search-cancel-button,
@@ -12786,30 +12904,35 @@
         }
 
         .fa-rotate-90 {
+            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
             -webkit-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
             transform: rotate(90deg)
         }
 
         .fa-rotate-180 {
+            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
             -webkit-transform: rotate(180deg);
             -ms-transform: rotate(180deg);
             transform: rotate(180deg)
         }
 
         .fa-rotate-270 {
+            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
             -webkit-transform: rotate(270deg);
             -ms-transform: rotate(270deg);
             transform: rotate(270deg)
         }
 
         .fa-flip-horizontal {
+            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
             -webkit-transform: scale(-1, 1);
             -ms-transform: scale(-1, 1);
             transform: scale(-1, 1)
         }
 
         .fa-flip-vertical {
+            -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
             -webkit-transform: scale(1, -1);
             -ms-transform: scale(1, -1);
             transform: scale(1, -1)
@@ -15684,8 +15807,10 @@
             clip: auto
         }
 
-        ce {
-        font-family: "Ionicons";
+        @charset "UTF-8";
+
+        @font-face {
+            font-family: "Ionicons";
             src: url("https://www.carevelveiculos.com.br/assets/plugins/ionicons/2.0/fonts/ionicons.eot?v=2.0.0");
             src: url("https://www.carevelveiculos.com.br/assets/plugins/ionicons/2.0/fonts/ionicons.eot?v=2.0.0#iefix") format("embedded-opentype"), url("https://www.carevelveiculos.com.br/assets/plugins/ionicons/2.0/fonts/ionicons.ttf?v=2.0.0") format("truetype"), url("https://www.carevelveiculos.com.br/assets/plugins/ionicons/2.0/fonts/ionicons.woff?v=2.0.0") format("woff"), url("https://www.carevelveiculos.com.br/assets/plugins/ionicons/2.0/fonts/ionicons.svg?v=2.0.0#Ionicons") format("svg");
             font-weight: normal;
@@ -16429,6 +16554,7 @@
         .ion-xbox:before {
             display: inline-block;
             font-family: "Ionicons";
+            speak: none;
             font-style: normal;
             font-weight: normal;
             font-variant: normal;
@@ -19385,6 +19511,8 @@
 
         .owl-carousel .owl-stage {
             position: relative;
+            -ms-touch-action: pan-Y;
+            -moz-backface-visibility: hidden
         }
 
         .owl-carousel .owl-stage:after {
@@ -19399,11 +19527,23 @@
         .owl-carousel .owl-stage-outer {
             position: relative;
             overflow: hidden;
+            -webkit-transform: translate3d(0, 0, 0)
+        }
+
+        .owl-carousel .owl-item,
+        .owl-carousel .owl-wrapper {
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            -ms-backface-visibility: hidden;
+            -webkit-transform: translate3d(0, 0, 0);
+            -moz-transform: translate3d(0, 0, 0);
+            -ms-transform: translate3d(0, 0, 0)
         }
 
         .owl-carousel .owl-item {
             min-height: 1px;
             float: left;
+            -webkit-backface-visibility: hidden;
             -webkit-touch-callout: none
         }
 
@@ -19524,6 +19664,7 @@
             background: url(owl.video.play.png) no-repeat;
             cursor: pointer;
             z-index: 1;
+            -webkit-backface-visibility: hidden;
             transition: transform .1s ease
         }
 
@@ -19600,6 +19741,7 @@
             margin: 5px 7px;
             background: #D6D6D6;
             display: block;
+            -webkit-backface-visibility: visible;
             transition: opacity .2s ease;
             border-radius: 30px
         }
@@ -19656,6 +19798,7 @@
             margin: 5px 7px;
             background: #D6D6D6;
             display: block;
+            -webkit-backface-visibility: visible;
             transition: opacity .2s ease;
             border-radius: 30px
         }
@@ -22809,7 +22952,8 @@
         <div class="container">
             <div class="col-12 col-lg-12">
                 <div class="group-title">
-                    <p class="text-center font-weight-bold  mb-0">Conheça os </p>
+                    <p class="text-center font-weight-bold  mb-0">Conheça os</p>
+                    <h2 class="text-center font-weight-bold lh-34 mb-3">Benefícios</h2>
                 </div>
                 <div class="row">
                     <div class="col-12 col-lg-3  px-3 mb-3 mb-lg-0 ">
@@ -23370,6 +23514,8 @@
                         <span property="dc:publisher">Carevel Volkswagen</span>
                     </label>
                     <div class="group-info-ibama">
+                        <img src="https://www.carevelveiculos.com.br/assets/uploads/nt_conteudo_geral/46545-ibama.png?v=0.1"
+                            alt="ibama" />
                         <p>Desacelere. Seu bem maior é a vida.</p>
                     </div>
                 </div>
@@ -23470,6 +23616,10 @@
             </div>
         </div>
     </div>
+    <script type="text/javascript" src="https://www.carevelveiculos.com.br/min/?g=js_default&v=0.1"></script>
+    <script type="text/javascript" src="https://www.carevelveiculos.com.br/min/?g=js_home_lp&v=0.1"></script>
+    <script type="text/javascript" src="https://www.carevelveiculos.com.br/min/?g=js_custom&v=0.1"></script>
+
 
 </body>
 
